@@ -35,6 +35,7 @@ L.control.condensedAttribution({
 ## Details:
 - Extends L.Control.Attribution, maintaining layer-based attribution.
 - Defaults to show if plugin lib included in project, removing classic attribution
+- works with leaflet 1.0 and prior
 
 ## [route360°](https://www.route360.net/)
 

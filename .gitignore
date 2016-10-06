@@ -1,0 +1,6 @@
+## generic ##
+*~
+*.lock
+*.DS_Store
+*._*
+Thumbs.db

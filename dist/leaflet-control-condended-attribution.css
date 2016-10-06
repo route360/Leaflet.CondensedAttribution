@@ -1,0 +1,36 @@
+.leaflet-container .leaflet-control-attribution {
+    margin: 10px;
+    padding: 0;
+    border-radius: 20px;
+    border: 6px solid rgba(0,0,0,.2);
+    background: rgba(255,255,255,.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.leaflet-control-attribution .attributes-body {
+  display: none;
+  padding: 0 4px 0 10px;
+  height: 28px;
+  line-height: 28px;
+}
+
+.leaflet-container .leaflet-control-attribution:hover .attributes-body {
+  display: inline-block !important;
+}
+
+.leaflet-control-attribution .attributes-emblem {
+  height: 28px;
+  width: 28px;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

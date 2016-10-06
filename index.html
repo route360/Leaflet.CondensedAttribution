@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>L.Control.CondensedAttribution</title>
+  <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+  <!-- leaflet-control-condended-attribution source -->
+  <link rel="stylesheet" href="dist/leaflet-control-condended-attribution.css" />
+  <script type="text/javascript" src="dist/leaflet-control-condended-attribution.js"></script>
+  
+  <!-- the demo-specific code -->
+  <style type="text/css">
+    body { padding: 0; margin: 0; }
+    html, body, #map { height: 100%; }
+    .emblem-wrap, .emblem-wrap img {
+      height: 16px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="map"></div>
+  <script type="text/javascript">
+    var map = L.map('map', {
+      condensedAttributionControl: false // don't include default, as we are setting options below
+    }).setView([52.51, 13.37], 12);
+
+    // set custom emblem and prefix
+    L.control.condensedAttribution({
+      emblem: '<div class="emblem-wrap"><img src="https://www.route360.net/assets/images/logo_nav.png"/></div>',
+      prefix: '<a href="https://www.route360.net/" title="Travel time analysis by Motion Intelligence">route360&deg;</a> | <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>'
+    }).addTo(map);
+
+    L.tileLayer('https://a.tiles.mapbox.com/v3/mi.0ad4304c/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+                    '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                    'Imagery &copy; <a href="http://mapbox.com">Mapbox</a>',
+    }).addTo(map);
+
+  </script>
+</body>
+
+</html>

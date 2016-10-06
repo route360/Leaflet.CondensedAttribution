@@ -1,6 +1,9 @@
 # Leaflet.CondensedAttribution
 An attribution plugin that makes long attributes visible on hover
 
+## Demo
+Refer to [index.html](index.html) or [see it live](https://route360.github.io/Leaflet.CondensedAttribution/).
+
 ## Features:
 - condense overly-long attribution text
 - add custom html to attribution emblem

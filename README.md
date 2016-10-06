@@ -1,6 +1,12 @@
 # Leaflet.CondensedAttribution
 An attribution plugin that makes long attributes visible on hover
 
+Closed
+![Alt text](attributes-closed.png?raw=true "Attributes Closed")
+
+Open
+![Alt text](attributes-open.png?raw=true "Attributes Open")
+
 ## Demo
 Refer to [index.html](index.html) or [see it live](https://route360.github.io/Leaflet.CondensedAttribution/).
 

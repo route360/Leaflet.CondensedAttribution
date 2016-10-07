@@ -7,6 +7,12 @@ Closed
 Open
 ![Alt text](attributes-open.png?raw=true "Attributes Open")
 
+Branded - Closed
+![Alt text](branded-closed.png?raw=true "Branded Closed")
+
+Branded - Open
+![Alt text](branded-open.png?raw=true "Branded Open")
+
 ## Demo
 Refer to [index.html](index.html) or [see it live](https://route360.github.io/Leaflet.CondensedAttribution/).
 

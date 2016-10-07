@@ -1,4 +1,4 @@
-.leaflet-container .leaflet-control-attribution {
+.leaflet-container .leaflet-condensed-attribution {
     margin: 10px;
     padding: 0;
     border-radius: 20px;
@@ -9,18 +9,18 @@
     display: flex;
 }
 
-.leaflet-control-attribution .attributes-body {
+.leaflet-condensed-attribution .attributes-body {
   display: none;
-  padding: 0 4px 0 10px;
+  padding: 0 4px 0 12px;
   height: 28px;
   line-height: 28px;
 }
 
-.leaflet-container .leaflet-control-attribution:hover .attributes-body {
+.leaflet-condensed-attribution:hover .attributes-body {
   display: inline-block !important;
 }
 
-.leaflet-control-attribution .attributes-emblem {
+.leaflet-condensed-attribution .attributes-emblem {
   height: 28px;
   width: 28px;
   font-size: 14px;

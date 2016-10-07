@@ -8,6 +8,46 @@ L.Control.CondensedAttribution = L.Control.Attribution.extend({
   options: {
     emblem: '?',
   },
+  onAdd: function (map) {
+    var vMaj = parseInt(L.version.split('.')[0]);
+    if (vMaj >= 1){
+      // Leaflet 1
+      map.attributionControl = this;
+  		this._container = L.DomUtil.create('div', 'leaflet-control-attribution');
+  		if (L.DomEvent) {
+  			L.DomEvent.disableClickPropagation(this._container);
+  		}
+
+  		// TODO ugly, refactor
+  		for (var i in map._layers) {
+  			if (map._layers[i].getAttribution) {
+  				this.addAttribution(map._layers[i].getAttribution());
+  			}
+  		}
+
+  		this._update();
+    } else {
+      // Leaflet sub 1
+      this._container = L.DomUtil.create('div', 'leaflet-control-attribution');
+  		L.DomEvent.disableClickPropagation(this._container);
+
+  		for (var i in map._layers) {
+  			if (map._layers[i].getAttribution) {
+  				this.addAttribution(map._layers[i].getAttribution());
+  			}
+  		}
+
+  		map
+  		    .on('layeradd', this._onLayerAdd, this)
+  		    .on('layerremove', this._onLayerRemove, this);
+
+  		this._update();
+    }
+
+    L.DomUtil.addClass(this._container, 'leaflet-condensed-attribution');
+
+    return this._container;
+	},
   _update: function () {
 		if (!this._map) { return; }
 

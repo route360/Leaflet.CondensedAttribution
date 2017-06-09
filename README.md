@@ -56,4 +56,4 @@ L.control.condensedAttribution({
 
 The Route 360°-technology by Motion Intelligence provides a simple API for large geographic network analysis, route planning and visualization to power complex geo-applications. Our solutions can be integrated into your existing platform or can be build as a new application to suit your requirements. Let us help power your business with state-of-the art geo capabilities.
 
-[Get your free API key](https://developers.route360.net/apikey.html), and start mapping!
+[Get your free API key](https://developers.route360.net/pricing/), and start mapping!
